@@ -1,0 +1,33 @@
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# Ollama models (large files)
+*.bin
+*.gguf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Local configuration
+.env
+config.local.json

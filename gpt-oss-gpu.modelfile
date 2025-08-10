@@ -1,0 +1,17 @@
+# Optimized Modelfile for gpt-oss:20b GPU usage
+FROM gpt-oss:20b
+
+# Reduce context to save GPU memory
+PARAMETER num_ctx 2048
+
+# Batch size optimization
+PARAMETER num_batch 128
+
+# Number of threads (adjust based on your CPU)
+PARAMETER num_thread 12
+
+# Temperature for consistent output
+PARAMETER temperature 0.7
+
+# GPU layers - force partial offload (adjust this value)
+PARAMETER num_gpu 15
